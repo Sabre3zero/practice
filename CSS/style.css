@@ -108,3 +108,39 @@ footer {
         visibility: hidden;
     }
 }
+
+.join {
+    padding: 24px 0;
+}
+
+.join label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.join input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #64748b;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+    font: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+input:focus-visible, button:focus-visible {
+  outline: 3px solid #172033;
+  outline-offset: 4px;
+}
+
+#message {
+    min-height: 3em;
+    overflow-wrap: anywhere;
+}
