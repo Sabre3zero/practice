@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #172033;
+  background: #f4f6fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-header {
+    padding: 20px 0; background: #ffffff;
+}
+
+.brand {
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+nav { display: flex;
+    flex-wrap: wrap; gap: 16px;
+}
+
+a {
+    color: #214f9b;
+}
+
+a:focus-visible {
+    outline: 3px solid #172033;
+    outline-offset: 4px;
+}
+
+.intro {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+h2 {
+    font-size: 26px; 
+}
+
+h3 {
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #214f9b;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+    background: #173c78;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow-wrap: anywhere;
+  flex: 1;
+  min-width: 0;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.contacts {
+    padding: 24px 0;
+}
+
+footer {
+    padding: 16px 0 24px;
+}
+
+@media (max-width: 700px) {
+  .cards { flex-direction: column; }
+  h1 { font-size: 28px; }
+}
+
+@media print {
+    nav{
+        visibility: hidden;
+    }
+}
