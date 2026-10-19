@@ -6,13 +6,14 @@
   <title>"Книжный червь"</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <script src="../JS/script.js" defer></script>
+  <script src="../JS/auth.js" defer></script>
 </head>
 
 <body>
 
   <header class="site-header">
     <div class="container">
-      <p class="brand">Веб-клуб</p>
+      <p class="brand">Книжный клуб "Книжный червь"</p>
       <nav aria-label="Основная навигация">
         <a href="#topics">Книги</a>
         <a href="#contacts">Контакты</a>
@@ -20,10 +21,48 @@
     </div>
   </header>
 
+  <section id="account" class="auth">
+      <h2>Учебный вход</h2>
+
+      <p id="demo-note">Демонстрация без защиты данных.
+        Используйте только учебные данные: student / web123.
+      </p>
+
+      <form id="login-form" novalidate aria-describedby="demo-note">
+        <label for="login">Логин</label>
+        <input id="login" type="text" required
+          autocomplete="username" maxlength="40">
+        
+        <label for="password">Учебный пароль</label>
+        <input id="password" type="password" required
+          autocomplete="current-password" maxlength="80">
+        
+        <label class="password-toggle">
+        <input id="show-password" type="checkbox">
+            Показать учебный пароль
+        </label>
+
+        <button class="button" type="submit">Войти</button>
+      </form>
+
+      <p id="auth-message" role="status"></p>
+
+      <div id="account-panel" hidden>
+        <h3 id="account-title" tabindex="-1">Кабинет участника</h3>
+        <p id="account-greeting"></p>
+        <p>Здесь можно продолжить работу с темами клуба.</p>
+        <button id="logout-button" class="button" type="button">
+          Выйти
+        </button>
+      </div>
+
+      <noscript>Для учебного входа включите JavaScript.</noscript>
+    </section>
+
   <main class="container">
 
     <section class="intro">
-      <h1>Читвем книги</h1>
+      <h1>Читаем книги</h1>
       <p>Читаем, общаемся, развиваемся</p>
       <a class="button" href="#topics">Посмотреть книги</a>
     </section>

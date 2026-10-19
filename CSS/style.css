@@ -172,4 +172,45 @@ select:focus-visible {
     .card {
         flex: auto;
     }
-} 
+}
+
+.auth {
+    padding: 24px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.auth label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+.auth input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #64748b;
+  border-radius: 8px;
+  font: inherit;
+}
+
+#auth-message {
+    min-height: 1.5em;
+    overflow-wrap: anywhere;
+}
+
+#account-title:focus {
+    outline: 3px solid #172033;
+    outline-offset: 4px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.auth .password-toggle input {
+  display: inline-block; width: auto; margin: 0 8px 0 0;
+}
