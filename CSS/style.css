@@ -144,3 +144,32 @@ input:focus-visible, button:focus-visible {
     min-height: 3em;
     overflow-wrap: anywhere;
 }
+
+.cards {
+    flex-wrap: wrap;
+} 
+
+.card {
+    flex: 1 1 240px;
+} 
+
+select {
+    font: inherit;
+    padding: 10px;
+    max-width: 100%;
+} 
+
+select:focus-visible {
+    outline: 3px solid #172033;
+    outline-offset: 4px;
+} 
+
+#topic-count {
+    min-height: 1.5em; 
+} 
+
+@media (max-width: 700px) {
+    .card {
+        flex: auto;
+    }
+} 

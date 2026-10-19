@@ -30,20 +30,17 @@
 
     <section id="topics">
       <h2>Книги</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>"1984"</h3>
-          <p>Джордж Оруэл</p>
-        </article>
-        <article class="card">
-          <h3>"Великий Гэтсби"</h3>
-          <p>Френсис Скотт</p>
-        </article>
-        <article class="card">
-          <h3>"Приключения Тома Сойера"</h3>
-          <p>Марк Твен</p>
-        </article>
-      </div>
+      <label for="category-filter">Категория тем</label> 
+
+      <select id="category-filter"> 
+        <option value="all">Все темы</option> 
+        <option value="dystopian">Антиутопия</option> 
+        <option value="novel">Роман</option> 
+      </select> 
+
+      <p id="topic-count" role="status"></p> 
+      <div id="topic-list" class="cards"></div> 
+      <noscript>Для вывода тем включите JavaScript.</noscript> 
     </section>
 
     <section id="contacts" class="contacts">
